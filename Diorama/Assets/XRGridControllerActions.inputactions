@@ -1,0 +1,74 @@
+{
+    "name": "XRGridControllerActions",
+    "maps": [
+        {
+            "name": "XRGridControls",
+            "id": "362089d8-4876-4785-9414-37b61fd7416d",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "ac739bcf-15a9-43dd-90b3-cd8fe06dc364",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "PlaceCube",
+                    "type": "Button",
+                    "id": "6bf8819c-ad17-4a7c-b97f-837ead397f9a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RemoveCube",
+                    "type": "Button",
+                    "id": "4cd5e78e-933b-4c50-9f03-a7d6ad0d9c14",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "26aab20e-c390-49cb-96b2-e4d1c3fb2f7e",
+                    "path": "<XRController>{LeftHand}/{Primary2DAxis}",
+                    "interactions": "",
+                    "processors": "StickDeadzone",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "77e7565b-6833-47a6-bccf-e308d23e5138",
+                    "path": "<OculusTouchController>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PlaceCube",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2962f517-f6c3-4e46-abce-4092306f93e0",
+                    "path": "<OculusTouchController>{RightHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RemoveCube",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
