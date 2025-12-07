@@ -1,0 +1,3 @@
+repository "EECS4471 TermProject/EECS4471 TermProject@3574290688450@cloud"
+  path "/"
+    smartbranch "/main/Master"
